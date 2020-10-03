@@ -5,7 +5,7 @@ import Product from './product'
 import Contact from './contact'
 import News from './news'
 
-export default function homePage(){
+export default function HomePage(){
 
     return(
         <div className="homePage">

@@ -4,7 +4,7 @@ import BackgroundRight from '../img/sky_right.jpg'
 import './css/basic.css'
 
 
-export default function navPage(){
+export default function NavPage(){
 
     return(
         <div className="container">

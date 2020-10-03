@@ -1,7 +1,7 @@
 import React from 'react'
 import Background from '../../img/island.jpg'
 
-export default function about(){
+export default function About(){
     const container = {
         position: 'relative',
         height: '1000px',

@@ -1,7 +1,7 @@
 import React from 'react'
 import Background from '../../img/sea.jpeg'
 
-export default function product(){
+export default function Product(){
 
     const container = {
         position: 'relative',
