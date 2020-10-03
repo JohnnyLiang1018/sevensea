@@ -1,5 +1,6 @@
 {
   "name": "sevensea",
+  "homepage": "http://sevensea.org/test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
