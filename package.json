@@ -1,6 +1,6 @@
 {
   "name": "sevensea",
-  "homepage": "http://sevensea.org/test",
+  "homepage": "https://sevensea.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
