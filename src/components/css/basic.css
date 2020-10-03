@@ -1,0 +1,73 @@
+.container {
+    height: 626px;
+    width: 100%;
+}
+
+.containerL {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.containerR {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.imageL {
+    position: absolute;
+    opacity: 1;
+    height: auto;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.imageR {
+    position: absolute;
+    opacity: 1;
+    height: auto;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.portfolio {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 313px;
+    left: 350px;
+    text-align: center;
+}
+
+.cmpe272 {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 313px;
+    right: 350px;
+    text-align: center;
+}
+
+.text {
+    color: white;
+    font-size: 32px;
+}
+
+.containerL:hover .imageL {
+    opacity: 0.9;
+}
+
+.containerL:hover .portfolio {
+    opacity: 1;
+}
+
+.containerR:hover .imageR {
+    opacity: 0.9;
+}
+
+.containerR:hover .cmpe272 {
+    opacity: 1;
+}
