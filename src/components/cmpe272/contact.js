@@ -18,26 +18,25 @@ export default function Contact(){
     }
 
 
-    const [data,setData] = useState([])
+    const [list,setList] = useState([])
 
     useEffect(() => {
         axios({
             method: 'get',
-            headers:{
-                'Access-Control-Allow-Origin': '*',
-            },
-            url: 'http://162.241.217.24/home4/sevensl6/php/index.php',
+            url: 'https://phpj4903.herokuapp.com/?request=contact',
         })
-        .then(result =>{
-            data = setData(result.data)
+        .then(response =>{
+            setList(response.data)
+            console.log(list[0])
         })
-    })
+    },[])
 
     return (
         <div style={container} className="contact">
             <p style={text}>
             Contact<br/>
-            Placeholder
+            Email: {list[0]}<br/>
+            Tel: {list[1]}<br/>
             </p>
         </div>
     )
