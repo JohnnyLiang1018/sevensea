@@ -16,7 +16,7 @@ export default function TopNav(){
                     <Tab label="Products" onClick={(e) => handler(1)}/>
                     <Tab label="News" onClick={(e) => handler(2)}/>
                     <Tab label="Contacts" onClick={(e) => handler(3)}/>
-                    <Tab label="Admin" href="cmpe272/admin"/>
+                    <Tab label="Admin" href="./admin"/>
                 </Tabs>
             </AppBar>
         </div>
