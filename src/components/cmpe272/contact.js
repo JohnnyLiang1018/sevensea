@@ -18,7 +18,7 @@ export default function Contact(){
     }
 
 
-    const [list,setList] = useState([])
+    const [contact,setContact] = useState([])
 
     useEffect(() => {
         axios({
@@ -26,8 +26,8 @@ export default function Contact(){
             url: 'https://phpj4903.herokuapp.com/?request=contact',
         })
         .then(response =>{
-            setList(response.data)
-            console.log(list[0])
+            setContact(response.data)
+            console.log(contact[0])
         })
     },[])
 
@@ -35,8 +35,8 @@ export default function Contact(){
         <div style={container} className="contact">
             <p style={text}>
             Contact<br/>
-            Email: {list[0]}<br/>
-            Tel: {list[1]}<br/>
+            Email: {contact[0]}<br/>
+            Tel: {contact[1]}<br/>
             </p>
         </div>
     )

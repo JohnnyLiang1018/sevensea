@@ -71,3 +71,26 @@
 .containerR:hover .cmpe272 {
     opacity: 1;
 }
+
+.intro {
+     position: relative;
+     height: 500px;
+     width: 100%;
+     background-color: darkgrey
+}
+
+.introText {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+.admin_label {
+    display: block;
+    font: .9rem 'Fira Sans', sans-serif;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+}
