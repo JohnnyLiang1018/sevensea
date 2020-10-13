@@ -20,11 +20,11 @@ export default function Admin(){
         })
         .then(response=>{
             console.log(response.data)
-            if(typeof response.data != 'Array'){
-                alert(response.data)
+            if(response.data.code != 200){
+                alert(response.data.message)
             }
             else{
-                setUsers(response.data)
+                setUsers(response.data.data)
             }
         })
     }
