@@ -37,7 +37,7 @@ class Kickstarter extends Component {
 		  ){
 			const Length_of_kick = (new Date(end_date).getTime() - new Date(start_date).getTime())/(1000*60*60*24)
 			  try {
-				  const response = await fetch(`http://localhost:5000/kickstarter?goal=${goal}&name=${project_name}&blurb=${description}&Length_of_kick=${Length_of_kick}`);
+				  const response = await fetch(`https://johnnyportfolioserver.herokuapp.com/kickstarter?goal=${goal}&name=${project_name}&blurb=${description}&Length_of_kick=${Length_of_kick}`);
 				  const result = await response.json();
 				  console.log('Success:', result);
 				  this.setState({prediction: result.result})
