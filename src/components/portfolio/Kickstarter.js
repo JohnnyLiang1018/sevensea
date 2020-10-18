@@ -214,12 +214,12 @@ class Kickstarter extends Component {
             //   style={styles.button}
               onClick={() => this.setExample1()}
             >
-              Project example 1
+              Example 1
             </Button>
             <Button
               onClick={() => this.setExample2()}
             >
-              Project example 2
+              Example 2
             </Button>
             <Button
               onClick={() => this.setAbout()}
@@ -231,16 +231,6 @@ class Kickstarter extends Component {
 
         {this.state.about ? (
           <Paper style={{alignSelf:'center', width: 500, margin:10, marginLeft: '30%', fontSize: 25}}>
-            <br/>
-            Kickstarter prediction is the website that allow people to enter their project and predict the probability of achiveing their goal.
-            <br/>
-            <br/>
-            Hope you can test it and enjoy it. 
-            <br/>
-            <br/>
-            and give us some feedback
-            <br/>
-            <br/>
             Developers for this project are:
             <br/>
             <br/>
@@ -251,9 +241,6 @@ class Kickstarter extends Component {
             <br/>
             <br/>
             Zhonglin 
-            <br/>
-            <br/>
-            Thank you
             <br/>
             <br/>
           </Paper>

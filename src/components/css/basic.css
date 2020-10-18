@@ -81,8 +81,9 @@
 
 .introText {
     position: absolute;
-    left: 45%;
-    top: 45%;
+    left: 10%;
+    top: 35%;
+    font: 1.5rem 'Fira Sans', sans-serif;
 }
 
 .admin_label {

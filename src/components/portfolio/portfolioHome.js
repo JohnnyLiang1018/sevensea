@@ -8,7 +8,11 @@ export default function portfolioHome(){
         <div className="portfolioHome">
             <div className="intro">
                 <p className="introText">
-                    this is a testing paragraph
+                About this project:<br></br>
+                The goal of this project is to build a predictive model for Kickstarter projects,<br></br> 
+                and hopefully it can provide insights and opportunities for the project founders to adjust the project's details before launching. <br></br>
+                It uses NLTK to handle the text data and a neural network to make the prediction.<br></br>
+                repo: <a href="https://github.com/JohnnyLiang1018/pyServer">https://github.com/JohnnyLiang1018/pyServer</a>
                 </p>
             </div>
             <div className="container1">
