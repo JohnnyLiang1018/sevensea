@@ -321,7 +321,7 @@ class Kickstarter extends Component {
                     <Button 
                         variant="contained"
                         color="primary"
-				        onClick={this.callAPI}
+				                onClick={this.callAPI}
                     >
                         Start to predict
                     </Button>

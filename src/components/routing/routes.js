@@ -2,8 +2,9 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import NavPage from '../navPage'
 import HomePage from '../cmpe272/homePage'
-import PortfolioHome from '../portfolio/portfolioHome';
-import Admin from '../cmpe272/admin';
+import PortfolioHome from '../portfolio/portfolioHome'
+import Admin from '../cmpe272/admin'
+import User from '../cmpe272/user'
 
 export default function Routes(){
     return(
@@ -12,6 +13,7 @@ export default function Routes(){
             <Route path="/cmpe272" exact component={HomePage}/>
             <Route path="/portfolio" exact component={PortfolioHome}/>
             <Route path="/cmpe272/admin" component={Admin}/>
+            <Route path="/cmpe272/user" component={User}/>
         </Switch>
     )
 }
