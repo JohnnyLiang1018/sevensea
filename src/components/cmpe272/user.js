@@ -44,10 +44,10 @@ export default function Upload(){
                     lName: lname,
                     addr: addr,
                     cellp: cellp,
-                    homep: homep
+                    homep: homep,
+                    action: "addUser"
                 },
                 url: 'https://phpj4903.herokuapp.com/index.php',
-                action: 'addUser'
             })
             
         } catch (err){

@@ -14,7 +14,8 @@ export default function Admin(){
             },
             data: {
                 username: document.getElementById("username").value,
-                password: document.getElementById("password").value
+                password: document.getElementById("password").value,
+                action: "admin"
             },
             url: 'https://phpj4903.herokuapp.com/index.php',
             action: 'admin'
