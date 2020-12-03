@@ -69,21 +69,19 @@ export default function Upload(){
             <div>
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="age-native-simple">First Name</InputLabel>
-                    <TextField>
-                        onChange={e => setFname(e.target.value)}
-                    </TextField>
+                    <TextField onChange={e=>setFname(e.target.value)} />
                 </FormControl>
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="age-native-simple">Last Name</InputLabel>
-                    <TextField onChange={e=> setLname(e.target.value)}/>
+                    <TextField onChange={e=>setLname(e.target.value)}/>
                 </FormControl>
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="age-native-simple">Email</InputLabel>
-                    <TextField id="standard-basic" onChange={e => setEmail(e.target.value)} />
+                    <TextField onChange={e=>setEmail(e.target.value)} />
                 </FormControl>
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="age-native-simple">Address</InputLabel>
-                    <TextField onChange={e => setAddr(e.target.value)}/>
+                    <TextField onChange={e=>setAddr(e.target.value)}/>
                 </FormControl>
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="age-native-simple">Home phone</InputLabel>
