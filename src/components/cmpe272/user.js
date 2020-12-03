@@ -46,7 +46,8 @@ export default function Upload(){
                     cellp: cellp,
                     homep: homep
                 },
-                url: 'https://phpj4903.herokuapp.com/users.php'
+                url: 'http://localhost:8081/index.php',
+                action: 'addUser'
             })
             
         } catch (err){
