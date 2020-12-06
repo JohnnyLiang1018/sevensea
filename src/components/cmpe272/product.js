@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Background from '../../img/sea.jpeg'
+import Axios from 'axios';
 
 export default function Product(){
 
@@ -28,12 +29,28 @@ export default function Product(){
         width: '100%'
     }
 
+    const [reviews,setReviews] = useState([])
+
+    useEffect(()=> {
+        Axios({
+            method: 'GET',
+            headers: {},
+            url: "https://ancient-retreat-00756.herokuapp.com/php_files/Hw_files/getAllReviewsCloud.php?wantTop5=&companyAffiliation=&numReviews="
+        })
+        .then(response =>{
+            setReviews(response.data)
+        })
+    },[])
+
     return(
         <div style={container} className="product">
             <div style={background}></div>
             <p style={text}>
             Product Text<br></br>
             Placeholder
+            </p>
+            <p style={text}>
+            
             </p>
         </div>
     )

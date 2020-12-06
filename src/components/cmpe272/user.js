@@ -48,6 +48,8 @@ export default function Upload(){
                     action: "addUser"
                 },
                 url: 'https://phpj4903.herokuapp.com/index.php',
+            }).then(response=>{
+                console.log(response)
             })
             
         } catch (err){
