@@ -47,7 +47,7 @@ export default function Upload(){
                     homep: homep,
                     action: "addUser"
                 },
-                url: 'https://phpj4903.herokuapp.com/index.php',
+                url: 'https://phpj4903.herokuapp.com/addUserCloud.php',
             }).then(response=>{
                 console.log(response)
             })
