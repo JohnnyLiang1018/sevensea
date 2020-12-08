@@ -20,7 +20,6 @@ const useStyles = makeStyles(theme => ({
     },
 }))
 
-
 export default function Upload(){
     const classes = useStyles()
     const [fname,setFname] = useState('')
@@ -29,25 +28,14 @@ export default function Upload(){
     const [addr,setAddr] = useState('')
     const [homep,setHomep] = useState('')
     const [cellp,setCellp] = useState('')
+    const [password,setPassword] = useState('')
 
     const submit = async e =>{
         e.preventDefault()
         try{
             Axios({
-                method: 'post',
-                headers: {
-                    'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
-                },
-                data : {
-                    email: email,
-                    fName: fname,
-                    lName: lname,
-                    addr: addr,
-                    cellp: cellp,
-                    homep: homep,
-                    action: "addUser"
-                },
-                url: 'https://phpj4903.herokuapp.com/addUserCloud.php',
+                method: 'GET',
+                url: `https://phpj4903.herokuapp.com/addUserCloud.php?lname=${lname}&fname=${fname}&email=${email}&pw=${password}&addr=${addr}&hPho=${homep}&cPho=${cellp}`
             }).then(response=>{
                 console.log(response)
             })
@@ -92,6 +80,10 @@ export default function Upload(){
                 <FormControl className={classes.formControl}>
                     <InputLabel htmlFor="age-native-simple">Cellphone</InputLabel>
                     <TextField onChange={e=>setCellp(e.target.value)}/>
+                </FormControl>
+                <FormControl className={classes.formControl}>
+                    <InputLabel htmlFor="age-native-simple">Cellphone</InputLabel>
+                    <TextField type="password" onChange={e=>setPassword(e.target.value)}/>
                 </FormControl>
                 <Button onClick={submit}>
                     Add User
