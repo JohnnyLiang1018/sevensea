@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Background from '../../img/sea.jpeg'
 import Axios from 'axios';
-import { TextField,Button } from '@material-ui/core';
+import { TextField,Button,Select,MenuItem } from '@material-ui/core';
 
 export default function Product(){
 
@@ -37,6 +37,11 @@ export default function Product(){
     }
 
     const [review,setReview] = useState('')
+    const [rating,setRating] = useState('')
+
+    const ratingChange = (event) => {
+        setRating(event.target.value);
+    }
 
     const submit = () => {
         Axios({
@@ -47,7 +52,7 @@ export default function Product(){
             data: {
                 product: 'Travel to Asia Island',
                 review: review,
-                rating: '5.0',
+                rating: rating,
             },
             url: 'https://phpj4903.herokuapp.com/review.php'
         })
@@ -86,6 +91,13 @@ export default function Product(){
                     onChange={(event)=> setReview(event.target.value)}
                     value={review}
                 />
+                <Select onChange={ratingChange}>
+                    <MenuItem value="1">1</MenuItem>
+                    <MenuItem value="2">2</MenuItem>
+                    <MenuItem value="3">3</MenuItem>
+                    <MenuItem value="4">4</MenuItem>
+                    <MenuItem value="5">5</MenuItem>
+                </Select>
                 <Button onClick={submit}>
                     Submit Review
                 </Button>
