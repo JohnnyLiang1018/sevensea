@@ -82,14 +82,11 @@ export default function Upload(){
                     <TextField onChange={e=>setCellp(e.target.value)}/>
                 </FormControl>
                 <FormControl className={classes.formControl}>
-                    <InputLabel htmlFor="age-native-simple">Cellphone</InputLabel>
+                    <InputLabel htmlFor="age-native-simple">Password</InputLabel>
                     <TextField type="password" onChange={e=>setPassword(e.target.value)}/>
                 </FormControl>
                 <Button onClick={submit}>
                     Add User
-                </Button>
-                <Button onClick={Search}>
-                    Search User
                 </Button>
             </div>
             {/* <input 

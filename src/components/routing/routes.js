@@ -14,6 +14,10 @@ export default function Routes(){
             <Route path="/portfolio" exact component={PortfolioHome}/>
             <Route path="/cmpe272/admin" component={Admin}/>
             <Route path="/cmpe272/user" component={User}/>
+            <Route path="/cmpe272/HomeSmart" component= {() => {
+                window.location.href = "https://brandon-ngo.xyz/";
+                return null;
+            }}/>
         </Switch>
     )
 }

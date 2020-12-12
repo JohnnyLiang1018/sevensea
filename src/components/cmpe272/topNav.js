@@ -2,6 +2,7 @@ import React from 'react'
 import AppBar from '@material-ui/core/AppBar'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
+import Market from './market'
 
 export default function TopNav(){
     const handler = (val) => {
@@ -18,6 +19,7 @@ export default function TopNav(){
                     <Tab label="Contacts" onClick={(e) => handler(3)}/>
                     <Tab label="Admin" href="./cmpe272/admin"/>
                     <Tab label="User" href="./cmpe272/user"/>
+                    <Market/>
                 </Tabs>
             </AppBar>
         </div>
